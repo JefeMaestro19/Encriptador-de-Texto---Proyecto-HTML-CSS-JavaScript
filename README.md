@@ -1,5 +1,5 @@
 # 🔐 Encriptador de Texto - Proyecto HTML/CSS/JavaScript
-# ` [Encriptador de Texto] (https://jefemaestro19.github.io/Encriptador-de-Texto---Proyecto-HTML-CSS-JavaScript/)  `
+# ` [Encriptador de Texto]   ` (https://jefemaestro19.github.io/Encriptador-de-Texto---Proyecto-HTML-CSS-JavaScript/)
 
 **Descripción:**  
 Este proyecto es un encriptador y desencriptador de texto simple desarrollado en **HTML**, **CSS** y **JavaScript**. Utiliza reglas de encriptación específicas para convertir texto ingresado en una forma encriptada y también permite revertir el texto encriptado a su forma original. La interfaz cuenta con un diseño visual inspirado en elementos misteriosos, evocando la estética de culturas antiguas como la maya.
