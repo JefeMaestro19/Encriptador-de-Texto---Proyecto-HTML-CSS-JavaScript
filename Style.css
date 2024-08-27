@@ -1,0 +1,168 @@
+@import url('https://fonts.googleapis.com/css2?family=Papyrus&display=swap');
+
+body {
+    font-family: 'Papyrus', sans-serif;
+    background-color: #1b1b1b;
+    color: #f4f4f4;
+    margin: 0;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.intro {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+    position: relative;
+    background-image: url('https://www.transparenttextures.com/patterns/black-linen.png');
+}
+
+.intro button {
+    padding: 15px 30px;
+    border: 2px solid #5e4c3a;
+    background-color: #3e3e3e;
+    color: #e0e0e0;
+    font-size: 1.5rem;
+    cursor: pointer;
+    font-family: 'Papyrus', sans-serif;
+    z-index: 2;
+    transition: transform 0.3s ease;
+}
+
+.intro button:hover {
+    background-color: #5e4c3a;
+}
+
+.compuerta {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 1;
+    overflow: hidden;
+}
+
+.compuerta div {
+    width: 50%;
+    height: 100%;
+    background-color: #2e2e2e;
+    transition: transform 1s ease;
+}
+
+.compuerta .izquierda {
+    transform: translateX(0);
+}
+
+.compuerta .derecha {
+    transform: translateX(0);
+}
+
+.open .izquierda {
+    transform: translateX(-100%);
+}
+
+.open .derecha {
+    transform: translateX(100%);
+}
+
+.container {
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    max-width: 100%;
+    padding: 30px;
+    background-color: #2e2e2e;
+    border-radius: 10px;
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.7);
+    border: 2px solid #5e4c3a;
+    animation: fadeIn 1s ease forwards;
+}
+
+@media (min-width: 768px) {
+    .container {
+        flex-direction: row;
+        padding: 50px;
+        max-width: 80%;
+    }
+}
+
+.section {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+textarea, input {
+    width: 100%;
+    padding: 15px;
+    margin: 10px 0;
+    border-radius: 4px;
+    border: 2px solid #5e4c3a;
+    background-color: #3e3e3e;
+    color: #e0e0e0;
+    font-family: 'Papyrus', sans-serif;
+}
+
+button {
+    padding: 12px 24px;
+    margin: 10px;
+    border-radius: 4px;
+    border: 2px solid #5e4c3a;
+    background-color: #3e3e3e;
+    color: #e0e0e0;
+    cursor: pointer;
+    font-family: 'Papyrus', sans-serif;
+}
+
+button:hover {
+    background-color: #5e4c3a;
+}
+
+.output {
+    width: 100%;
+    padding: 20px;
+    margin-top: 20px;
+    background-color: #4a4a4a;
+    border-radius: 4px;
+    border: 2px solid #5e4c3a;
+    color: #e0e0e0;
+    white-space: pre-wrap;
+    min-height: 150px;
+    font-family: 'Papyrus', sans-serif;
+}
+
+footer {
+    margin-top: 20px;
+    padding: 10px;
+    text-align: center;
+    font-size: 0.8rem;
+    color: #b3b3b3;
+    border-top: 2px solid #5e4c3a;
+    width: 100%;
+    background-color: #2e2e2e;
+    border-radius: 0 0 10px 10px;
+    box-shadow: 0px -5px 15px rgba(0, 0, 0, 0.5);
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}

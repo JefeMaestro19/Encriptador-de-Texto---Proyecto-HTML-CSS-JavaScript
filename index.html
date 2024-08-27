@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Encriptador Misterioso</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+   
+    <div class="intro">
+        <button onclick="openCompuerta()">?</button>
+        <div class="compuerta">
+            <div class="izquierda"></div>
+            <div class="derecha"></div>
+        </div>
+    </div>
+
+    <div class="container" id="mainContent">
+        <!-- Sección para ingresar texto y encriptar/desencriptar -->
+        <div class="section">
+            <textarea id="inputText" rows="8" placeholder="Ingresa el texto aquí..."></textarea>
+            <button onclick="encrypt()">Encriptar</button>
+            <button onclick="decrypt()">Desencriptar</button>
+        </div>
+
+        <!-- Sección para mostrar el resultado y copiar -->
+        <div class="section">
+            <div class="output" id="outputText"></div>
+            <button onclick="copyToClipboard()">Copiar Texto</button>
+        </div>
+    </div>
+
+    <!-- Pie de página -->
+    <footer>
+        BrandonDeveloperIndustries 2024
+    </footer>
+    <script src="Script.js"></script>
+</body>
+</html>
